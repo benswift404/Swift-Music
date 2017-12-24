@@ -12,7 +12,6 @@ import java.net.URI;
 public class SwiftMusic {
 
     public static void main(String[] args) {
-        new SwiftMusic();
         createUI();
     }
 
