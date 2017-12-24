@@ -29,10 +29,6 @@ public class SwiftMusic {
         JComboBox comboBox = new JComboBox<>(artists);
         JFrame frame = new JFrame("Swift Music");
 
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 300);
-        frame.setResizable(true);
-
         button.addActionListener(new ActionListener() {
         
             @Override
@@ -53,10 +49,15 @@ public class SwiftMusic {
             }
         });
 
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 300);
+        frame.setResizable(true);
+
         panel.add(titleLabel);
         panel.add(comboBox);
         panel.add(button);
         frame.add(panel);
+        
 
         frame.setVisible(true);
     }
